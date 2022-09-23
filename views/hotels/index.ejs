@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hotel Management System</title>
+  <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+  <section class="navigation">
+    <nav class="navbar">
+        <div class="nav-content">
+            <ul class="list-items">
+                <li class="list-item"><a href="#home">Home</a></li>
+                <li class="list-item"><a href="#services">Services</a></li>
+                <li class="list-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+      <div class="nav-title">HMS</div>
+        <div class="nav-content">
+            <ul class="list-items">
+                <li class="list-item"><a href="#home">Weddings</a></li>
+                <li class="list-item"><a href="#home">Bush Parties</a></li>
+                <li class="list-item"><a href="#home">Events</a></li>
+            </ul>
+        </div>
+    </nav>
+  </section>
+  <section class="hero" id="home">
+    <div class="video-loop-container">
+        <video src="Video/reception.mp4" autoplay muted loop id="video"></video>
+        <div class="video-content">
+            <p class="video-text">
+                The Ultimate Experience
+            </p>
+            <p class="video-sub-text">
+                of Magic
+            </p>
+            <a href="/hotels/book" class="btn btn-book">Book Now</a>
+        </div>
+    </div>
+  </section>
+  <section class="services" id="services">
+      <div class="service-container">
+          <p class="service-container-text">At a Glance</p>
+      </div>
+
+      <div class="hotel-service" data-hotel-service id="data-hotel-service">
+      </div>
+
+      <div class="patio_outdoor_service">
+          <div class="patio_container">
+              <div class="lake_outdoor">
+                  <p class="lake_outdoor_text">
+                      Devour the serenity of nature from an elegant viewpoint of our comforting sun loungers
+                  </p>
+                  <div class="patio_icons">
+                      <div class="patio_icons_image_div">
+                          <img src="image/resort-icon.png" alt="resort icon">
+                          <p class="patio_icon_text">Stay</p>
+                      </div>
+                      OR
+                      <div class="patio_icons_image_div">
+                          <img src="image/lodge-icon.png" alt="lodge icon">
+                          <p class="patio_icon_text">Travel</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="patio_image">
+                  <img src="image/patiolounger.jpg" alt="sun lounger">
+              </div>
+          </div>
+
+          <div class="patio_container">
+          <div class="lake_outdoor">
+              <p class="lake_outdoor_text">
+                  Stay late and dine with strangers and friends. Laugh, smile and fall in love with the place in our
+                  rarest bush party event
+              </p>
+              <div class="patio_icons">
+                  <div class="patio_icons_image_div">
+                      <img src="image/resort-icon.png" alt="resort icon">
+                      <p class="patio_icon_text">Stay</p>
+                  </div>
+                  OR
+                  <div class="patio_icons_image_div">
+                      <img src="image/lodge-icon.png" alt="lodge icon">
+                      <p class="patio_icon_text">Travel</p>
+                  </div>
+              </div>
+          </div>
+          <div class="patio_image">
+              <img src="image/party.jpg" alt="It's a bush party bitches">
+          </div>
+      </div>
+      </div>
+  </section>
+  <footer class="footer" id="contact">
+      <div class="footer_service">
+          <p class="footer_service_text">Les Service</p>
+          <ul class="footer_list_items">
+              <li class="footer_list_item">Bush Dining</li>
+              <li class="footer_list_item">Weddings</li>
+              <li class="footer_list_item">Concierge</li>
+              <li class="footer_list_item">Meetings and Conferences</li>
+              <li class="footer_list_item">Valet</li>
+          </ul>
+      </div>
+      <div class="footer_service_events">
+          <div class="footer_service_text">What can you do?</div>
+          <ul class="footer_list_events">
+              <li class="footer_list_event">Social Danger</li>
+              <li class="footer_list_event">Field Hunting</li>
+              <li class="footer_list_event">Boat Riding</li>
+              <li class="footer_list_event">Bird Sighting</li>
+              <li class="footer_list_event">Nature Walks</li>
+          </ul>
+      </div>
+      <div class="footer_service_contact">
+          <p class="contact_text">Chat with us</p>
+          <div class="contact">
+              <textarea name="textarea" id="textarea" cols="40" rows="5" placeholder="Is someone there!!"></textarea>
+              <button class="btn btn-send">Send</button>
+          </div>
+      </div>
+  </footer>
+</body>
+</html>

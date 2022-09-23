@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Booking happens here</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js" defer></script>
+</head>
+<body style="background: #1c1b29;">
+    <form action="" method="post" class="form">
+        <label for="email">Email
+            <input type="email" name="email" id="email">
+        </label>
+        <label for="book_date">Current Date
+            <input type="date" name="book_date" id="book_date">
+        </label>
+        <label for="dep_date">Departure Date
+            <input type="date" name="dep_date" id="dep_date">
+        </label>
+        <label for="number">Adults
+            <input type="number" name="adult" id="adult " placeholder="How many adults will be with you" required>
+        </label>
+        <label for="number">Children
+            <input type="number" name="child" id="child" placeholder="How many children will be with you" required>
+        </label>
+        <div class="buttons">
+            <button type="submit" class="btn btn-send">Send</button>
+            <a href="/" class="btn btn-main">Go to main page</a>
+        </div>
+    </form>
+</body>
+</html>

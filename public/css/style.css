@@ -1,0 +1,331 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("/FONTS/Poppins/Poppins-Regular.ttf");
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Poppins";
+}
+
+.navigation .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: 0px 1px 1px rgba(0,0,0,.75);
+  padding: 50px 0;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+}
+
+.navbar .nav-title {
+  margin-top: -40px;
+  margin-left: -50px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  position: absolute;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.navbar .nav-title::after {
+  content: "HMS";
+  position: absolute;
+  background: #1c1b29;
+  height: 93%;
+  width: 93%;
+  top: 3.3%;
+  left: 3.3%;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  letter-spacing: 6px;
+  border-radius: 2px;
+  font-size: 20px;
+}
+
+.nav-content .list-items {
+  display: flex;
+  flex-direction: row;
+  margin: 0 50px;
+}
+
+.nav-content .list-items .list-item {
+  margin: 0 5px;
+  list-style: none;
+}
+
+.nav-content .list-items .list-item a{
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+
+.nav-content .list-items .list-item a::before {
+  position: absolute;
+  top: -30%;
+  content: "";
+  display: block;
+  height: 5px;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+  background: black;
+}
+
+.nav-content .list-items .list-item a:hover::before {
+  width: 100%;
+}
+
+.video-loop-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.video-loop-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.video-loop-container::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+.video-text, .video-sub-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  width: 500px;
+  text-align: center;
+}
+
+.video-sub-text {
+  margin-top: 40px;
+}
+
+.btn-book {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 50px;
+  background: white;
+  color: black;
+  margin-top: 100px;
+  border: 0;
+  outline: 0;
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-container-text {
+  font-size: 22px;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.service-container-card {
+  width: 300px;
+  height: 400px;
+  margin: 20px 5px;
+  box-shadow: 0px 1px 1px rgba(0,0,0,.75);
+
+}
+
+.service-container-card .image {
+  width: 300px;
+  height: 200px;
+}
+
+.service-container-card .image img{
+  width: 100%;
+  height: 100%;
+}
+
+.hotel-service {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-body {
+  margin: 50px auto;
+  padding: 10px;
+}
+
+.patio_outdoor_service {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.patio_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.patio_container .lake_outdoor .lake_outdoor_text {
+  width: 550px;
+}
+
+.patio_container .patio_image  {
+  width: 600px;
+  height: 700px;
+}
+
+.patio_outdoor_service {
+  margin: 40px 0;
+}
+
+.patio_container .patio_image img {
+  width: 100%;
+  height: 100%;
+}
+
+.patio_icons {
+  display: flex;
+  height: 50px;
+  align-items: flex-start;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+.patio_icons_image_div img {
+  height: 30px;
+  width: 40px;
+}
+
+.patio_icons_image_div {
+  margin: 20px 10px;
+}
+
+.footer {
+  background: midnightblue;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px;
+  color: floralwhite;
+}
+
+.footer_service_text,
+.contact_text {
+  font-size: 22px;
+  margin: 10px 0;
+  font-weight: bolder;
+}
+
+.footer_list_event,
+.footer_list_item {
+  margin: 10px 0;
+  list-style: none;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact textarea {
+  resize: none;
+  margin-bottom: 5px;
+  font-family: sans-serif !important;
+  outline: none;
+}
+
+.contact .btn-send {
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .lake_outdoor_text {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+
+  .patio_icons {
+    padding-left: 5em;
+  }
+
+  .patio_image {
+    margin: 0 20px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  width: 80%;
+  margin: 40px auto;
+  color: white;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input {
+  padding: 10px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn-send,
+.btn-main{
+  width: 300px;
+  margin: 20px auto;
+  padding: 15px;
+  outline: none;
+  border: none;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-main {
+  text-decoration: none;
+  color: black;
+  background: white;
+}
